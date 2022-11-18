@@ -4,6 +4,14 @@ from PIL import Image, ImageTk
 import tkinter.font as font
 
 
+
+def about_the_dev():
+    root=Tk()
+    root.geometry('500x500')
+    name=Label(root,text="DEVELOPERS",font=("Helvitika",20,'bold')).place(x=180,y=10)
+    name1=Label(root,text="BHARGAV",font=("Helvitika",10,'bold')).place(x=200,y=100)
+    name2=Label(root,text="RAKESH",font=("Helvitika",10,'bold')).place(x=200,y=135)
+
 def jalandhar():
     root = Tk()
     root.geometry('500x500')
@@ -107,7 +115,7 @@ boo = Label(frame, text="Travelling Salesman problem", bg="white",
 op = Label(frame, text="CHOOSE YOUR CITY TO GET THE SHORTEST DISTANCE",
            font=("Helvitika", 10, 'bold')).place(x=180, y=400)
 jil_jil = Button(frame, text="About the Developers", foreground="white",
-                 width=25, bg="black", font=("Helvitika", 13, 'bold')).place(x=250, y=520)
+                 width=25, bg="black", font=("Helvitika", 13, 'bold'),command=about_the_dev).place(x=250, y=520)
 but = Button(frame, text="Amrister", command=amrister,
              bg='grey').place(x=100, y=450)
 but = Button(frame, text="Jalandhar", command=jalandhar,
